@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Portofolio | Your Name</title>
+    <meta name="description" content="Interactive portfolio with parallax and scroll effects." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <header class="navbar" id="navbar">
+        <div class="container nav-inner">
+            <a class="logo" href="#hero">SB</a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#organization" class="nav-link">Work Experience & Organizations</a></li>
+                </ul>
+            </nav>
+            <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">&#9788;</button>
+        </div>
+    </header>
+
+    <section class="hero" id="hero">
+        <div class="hero-bg" aria-hidden="true">
+            <div class="parallax layer" data-parallax="0.2"></div>
+            <div class="parallax layer dots" data-parallax="0.4"></div>
+            <div class="parallax layer glow" data-parallax="0.1"></div>
+        </div>
+        <div class="container hero-inner">
+            <div class="hero-content reveal">
+                <h1><span class="hi">Hi,</span> I’m <span class="accent">Dahana Sebi Hascarya</span></h1>
+                <p class="subtitle">Fresh Graduate</p>
+                <div class="cta">
+                    <a href="#projects" class="btn primary">Lihat Proyek</a>
+                    <a href="#contact" class="btn ghost">Hubungi Saya</a>
+                </div>
+            </div>
+            <div class="hero-visual reveal" aria-hidden="true">
+                <div class="avatar-wrap" data-tilt>
+                    <img src="/Foto Pribadi CV fix.jpg" alt="Your portrait" class="avatar" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <main>
+        <section class="about section" id="about">
+            <div class="container grid two-cols">
+                <div class="reveal">
+                    <h2 class="section-title">About</h2>
+                    <p style="text-align: justify;">
+                        Fresh Graduate dari Universitas Multimedia Nusantara jurusan Informatika dengan minat besar pada pengembangan web. Memiliki keterampilan dalam HTML, CSS, JavaScript, React, dan SQL, serta memahami framework modern seperti Tailwind CSS dan Next.js. 
+                    </p>
+                    <p style="text-align: justify;">
+                        Saat ini sedang mempelajari TypeScript untuk memperkuat kemampuan dalam membangun aplikasi web yang lebih scalable dan maintainable. Memiliki semangat belajar tinggi, adaptif terhadap teknologi baru, serta mampu bekerja secara kolaboratif maupun mandiri dalam tim pengembangan.
+                    </p>
+                </div>
+                <div class="reveal about-visual" aria-hidden="true">
+                    <img class="about-img" src="https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=1200&auto=format&fit=crop" alt="Ilustrasi IT dan pengembangan web" />
+                </div>
+            </div>
+        </section>
+
+        <section class="skills section" id="skills">
+            <div class="container">
+                <h2 class="section-title reveal">Skills</h2>
+                <div class="skills-grid">
+                    <div class="skill-card reveal" data-tilt>
+                        <span>HTML</span>
+                        <div class="meter"><span style="width: 95%"></span></div>
+                    </div>
+                    <div class="skill-card reveal" data-tilt>
+                        <span>CSS / Tailwind</span>
+                        <div class="meter"><span style="width: 90%"></span></div>
+                    </div>
+                    <div class="skill-card reveal" data-tilt>
+                        <span>JavaScript</span>
+                        <div class="meter"><span style="width: 92%"></span></div>
+                    </div>
+                    <div class="skill-card reveal" data-tilt>
+                        <span>React</span>
+                        <div class="meter"><span style="width: 88%"></span></div>
+                    </div>
+                    <div class="skill-card reveal" data-tilt>
+                        <span>Accessibility</span>
+                        <div class="meter"><span style="width: 85%"></span></div>
+                    </div>
+                    <div class="skill-card reveal" data-tilt>
+                        <span>Performance</span>
+                        <div class="meter"><span style="width: 90%"></span></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="projects section" id="projects">
+            <div class="container">
+                <h2 class="section-title reveal">Projects</h2>
+                <div class="projects-grid">
+                    <article class="project-card reveal" data-tilt>
+                        <img src="/img/portfolio1.png" alt="Project screenshot" />
+                        <div class="project-content">
+                            <h3>Website IndoTrans</h3>
+                            <p>Website perusahaan berbasis Laravel/PHP yang dikembangkan berkelompok. Saya bertanggung jawab pada halaman autentikasi (login).</p>
+                        </div>
+                    </article>
+                    <article class="project-card reveal" data-tilt>
+                        <img src="img/portfolio2.png" alt="Project screenshot" />
+                        <div class="project-content">
+                            <h3>Website Clots</h3>
+                            <p>Situs e-commerce sederhana dibangun dengan HTML, CSS, dan JavaScript.</p>
+                        </div>
+                    </article>
+                    <article class="project-card reveal" data-tilt>
+                        <img src="img/berita.png" alt="Project screenshot" />
+                        <div class="project-content">
+                            <h3>Halaman Berita</h3>
+                            <p>Halaman berita berbasis React dengan efek parallax dan blur untuk pengalaman membaca yang imersif.</p>
+                        </div>
+                    </article>
+                    <!-- Baris kedua: 3 project tambahan -->
+                    <article class="project-card reveal" data-tilt>
+                        <img src="img/portfolio4.png" alt="Project screenshot" />
+                        <div class="project-content">
+                            <h3>To‑Do List</h3>
+                            <p>Aplikasi to‑do untuk mencatat aktivitas dengan fitur tambah dan hapus tugas.</p>
+                        </div>
+                    </article>
+                    <article class="project-card reveal" data-tilt>
+                        <img src="img/portfolio5.png" alt="Project screenshot" />
+                        <div class="project-content">
+                            <h3>IMDB Clone</h3>
+                            <p>Klon IMDB menggunakan The Movie Database (TMDB) API, dikembangkan dengan React.</p>
+                        </div>
+                    </article>
+                    <article class="project-card reveal" data-tilt>
+                        <img src="img/green1.png" alt="Project screenshot" />
+                        <div class="project-content">
+                            <h3>Slicing Web Katadata</h3>
+                            <p>Slicing antarmuka situs Katadata berdasarkan desain acuan yang diberikan.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pengalaman Organisasi -->
+        <section class="section" id="organization">
+            <div class="container">
+                <h2 class="section-title reveal">Work Experience & Organizations</h2>
+                <div class="projects-grid">
+                    <article class="project-card reveal" data-tilt>
+                        <img src="img/Katadata.png" alt="Pengalaman Kerja Katadata" />
+                        <div class="project-content">
+                            <h3>Katadata Indonesia (Magang, 3 bulan)</h3>
+                            <p>Front‑End Web Developer: membantu pengembangan dan maintenance situs Katadata di bawah supervisi tim.</p>
+                        </div>
+                    </article>
+                    <article class="project-card reveal" data-tilt>
+                        <img src="img/logo1.png" alt="Organisasi UKM Qorie" />
+                        <div class="project-content">
+                            <h3>UKM Qorie</h3>
+                            <p>Unit kegiatan fokus bahasa dan budaya Korea: belajar bahasa Korea serta berdiskusi mengenai kultur dan kebudayaan.</p>
+                        </div>
+                    </article>
+                    <article class="project-card reveal" data-tilt>
+                        <img src="img/logo2.png" alt="Organisasi MIP Awards" />
+                        <div class="project-content">
+                            <h3>MIP AWARDS 6</h3>
+                            <p>Panitia acara penghargaan film pendek tingkat fakultas: koordinasi pelaksanaan acara.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact section" id="contact">
+            <div class="container">
+                <div class="reveal">
+                    <h2 class="section-title">Contact</h2>
+                    <p>Ingin kolaborasi atau ada pertanyaan? Hubungi saya melalui platform berikut.</p>
+                    <ul class="contact-list icon-grid">
+                        <li>
+                            <a class="icon-btn" href="mailto:sebi2911@gmail.com" aria-label="Email">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2Zm0 4-8 5L4 8V6l8 5 8-5v2Z"/></svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="icon-btn" href="https://www.facebook.com/dahana.hascarya/" target="_blank" rel="noreferrer noopener" aria-label="Facebook">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M22 12a10 10 0 1 0-11.5 9.9v-7H7.9V12h2.6V9.8c0-2.6 1.5-4 3.8-4 1.1 0 2.2.2 2.2.2v2.4h-1.2c-1.2 0-1.6.8-1.6 1.6V12h2.8l-.4 2.9h-2.4v7A10 10 0 0 0 22 12Z"/></svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="icon-btn" href="https://www.instagram.com/sebi.5381/" target="_blank" rel="noreferrer noopener" aria-label="Instagram">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5Zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7Zm5 3a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm0 2.2A2.8 2.8 0 1 0 12 16.8 2.8 2.8 0 0 0 12 9.2ZM18 6.7a1 1 0 1 1 0 2.1 1 1 0 0 1 0-2.1Z"/></svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="icon-btn" href="https://github.com/Sebiman4" target="_blank" rel="noreferrer noopener" aria-label="GitHub">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M12 2C6.5 2 2 6.6 2 12.3c0 4.5 2.9 8.3 6.9 9.6.5.1.7-.2.7-.5v-2c-2.8.6-3.4-1.2-3.4-1.2-.5-1.1-1.2-1.4-1.2-1.4-1-.7.1-.7.1-.7 1.1.1 1.7 1.2 1.7 1.2 1 .1.7 1.9 2.8 1.3.1-.8.4-1.3.7-1.6-2.2-.3-4.5-1.1-4.5-5 0-1.1.4-2 .9-2.7-.1-.3-.4-1.3.1-2.6 0 0 .8-.3 2.8 1 .8-.2 1.6-.3 2.4-.3s1.6.1 2.4.3c2-1.3 2.8-1 2.8-1 .5 1.3.2 2.3.1 2.6.6.7.9 1.6.9 2.7 0 3.9-2.3 4.7-4.5 5 .4.3.7.9.7 1.8v2.7c0 .3.2.6.7.5 4-1.3 6.9-5.1 6.9-9.6C22 6.6 17.5 2 12 2Z" clip-rule="evenodd"/></svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="icon-btn" href="https://www.linkedin.com/in/dahana-sebi-hascarya/" target="_blank" rel="noreferrer noopener" aria-label="LinkedIn">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.9 8.6H3.7V20h3.2V8.6ZM5.3 7.2a1.9 1.9 0 1 0 0-3.8 1.9 1.9 0 0 0 0 3.8ZM20.3 20h-3.2v-6.2c0-1.5-.5-2.5-1.8-2.5-1 0-1.6.7-1.8 1.4-.1.2-.1.5-.1.8V20h-3.2V8.6h3.2v1.6c.4-.6 1.1-1.6 2.8-1.6 2.1 0 4 1.4 4 4.6V20Z"/></svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>© <span id="year"></span> Sebi. Dibuat dengan ❤ dan kopi.</p>
+        </div>
+    </footer>
+
+    <button id="backToTop" class="back-to-top" aria-label="Back to top">↑</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
