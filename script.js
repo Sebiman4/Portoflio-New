@@ -94,22 +94,6 @@ function createTilt(el) {
 }
 document.querySelectorAll('[data-tilt]').forEach(createTilt);
 
-// Theme toggle
-const themeToggle = document.getElementById('themeToggle');
-const prefersDark = window.matchMedia('(prefers-color-scheme: dark)');
-function setTheme(mode) { document.documentElement.dataset.theme = mode; localStorage.setItem('theme', mode); themeToggle.textContent = mode === 'dark' ? '☾' : '☀'; }
-const saved = localStorage.getItem('theme');
-if (saved) setTheme(saved); else setTheme(prefersDark.matches ? 'dark' : 'light');
-prefersDark.addEventListener('change', e => { if (!localStorage.getItem('theme')) setTheme(e.matches ? 'dark' : 'light'); });
-themeToggle.addEventListener('click', () => { const mode = (document.documentElement.dataset.theme === 'dark') ? 'light' : 'dark'; setTheme(mode); });
-
-// Apply theme variables swap
-const themeStyle = document.createElement('style');
-themeStyle.innerHTML = `
-  :root[data-theme="light"] { --bg: #f7f9fc; --surface: #ffffff; --text: #0e1320; --muted: #4e5d78; --accent: #1f6bff; --accent-2: #00c2d7; --card: #ffffff; --glow: 0 0 28px rgba(31, 107, 255, 0.25); }
-  :root[data-theme="dark"]  { --bg: #0b0f17; --surface: #0f1420; --text: #e6eefc; --muted: #93a1bd; --accent: #6aa2ff; --accent-2: #7ef0ff; --card: #101724; --glow: 0 0 40px rgba(106, 162, 255, 0.25); }
-`;
-document.head.appendChild(themeStyle);
 
 // Footer year
 document.getElementById('year').textContent = new Date().getFullYear();
